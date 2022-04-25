@@ -1,0 +1,2 @@
+# Asp_Onion_Api
+Backend api contains most of the necessary settings for working with the API with examples most of it and contains Repositories pattern and unitofwork pattern, use jwt for authentication and authorization, image upload /download and add redis configuration and email services for send email to gmail, signalR configration and test it with project Management_User_With_Vuejs , xunit with onion  
