@@ -1,0 +1,4 @@
+{
+    "nuxt.isNuxtApp": false,
+    "dotnet-test-explorer.testProjectPath": "**/*Test.csproj"
+}

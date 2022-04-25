@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "XXIP730xtxFw3lNBK8xOd4x14rM+OS5s0SsWgKjyjZV/emNmgHSEOKbVTE1ol5SVR/Ik0dswWlURES0TdWQ8lA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Alia\\skinet\\build.proj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Alia\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.0\\microsoft.netframework.referenceassemblies.1.0.0.nupkg.sha512",
+    "C:\\Users\\Alia\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net45\\1.0.0\\microsoft.netframework.referenceassemblies.net45.1.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
