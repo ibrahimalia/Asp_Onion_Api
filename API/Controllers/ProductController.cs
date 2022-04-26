@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.Json;
@@ -12,6 +13,7 @@ using Infrastructure.Data.DTOs;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Memory;
 using Newtonsoft.Json;
 using StackExchange.Redis;
 
@@ -21,11 +23,12 @@ namespace API.Controllers
     public class ProductController : ApiBaseController
     {
         private readonly IUnitOfWork _unitOfwork;
+        private readonly IMemoryCache _memoryCache;//use to cache in-memory
 
-        public ProductController(IUnitOfWork unitOfWork)
+        public ProductController(IUnitOfWork unitOfWork, IMemoryCache memoryCache)
         {
             _unitOfwork = unitOfWork;
-
+            _memoryCache = memoryCache;
         }
         // [HttpGet]
         // public async Task<ActionResult<List<Product>>> getProduct()
@@ -39,8 +42,8 @@ namespace API.Controllers
         public async Task<ActionResult<Product>> getProductId(int id)
         {
 
-            var product = await  _unitOfwork.Product.FindByConditionD(p=>p.Id == id,false);
-              return new ActionResult<Product>(product);
+            var product = await _unitOfwork.Product.FindByConditionD(p => p.Id == id, false);
+            return new ActionResult<Product>(product);
 
         }
         //apply pagination
@@ -56,7 +59,20 @@ namespace API.Controllers
         [HttpGet("types")]
         public async Task<ActionResult<List<ProductType>>> getProductType()
         {
-            var ProductTypes = await _unitOfwork.Product.getProductTypes(false).ToListAsync();
+            var cacheKey = "types";
+            if (!_memoryCache.TryGetValue(cacheKey, out List<ProductType> ProductTypes))
+            {
+                ProductTypes = await _unitOfwork.Product.getProductTypes(false).ToListAsync();
+                var cacheExpiryOptions = new MemoryCacheEntryOptions
+                {
+                    AbsoluteExpiration = DateTime.Now.AddSeconds(50),
+                    Priority = CacheItemPriority.High,
+                    SlidingExpiration = TimeSpan.FromSeconds(20)
+                };
+                _memoryCache.Set(cacheKey, ProductTypes, cacheExpiryOptions);
+
+
+            }
             return Ok(ProductTypes);
         }
         [HttpPost("brand")]
@@ -85,6 +101,8 @@ namespace API.Controllers
             Response.Headers.Add("X-pagination", JsonConvert.SerializeObject(products.MetaData));
             return Ok(new ApiResponse(200, products));
         }
+        //use caching in-memory
+
 
     }
 }

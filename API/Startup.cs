@@ -56,6 +56,7 @@ namespace API
             //
             services.ConfigureIdentity(Configuration);
             //
+            services.AddMemoryCache();
             services.AddScoped<ITokenService, TokenService>();
             services.AddTransient<IEmailSender, EmailSender>();
             services.AddScoped<IBacksetRepository,BacksetRepository>();
