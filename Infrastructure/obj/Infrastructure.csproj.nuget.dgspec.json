@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Alia\\skinet\\Infrastructure\\Infrastructure.csproj": {}
+    "C:\\Users\\Alia\\skinet\\Infrastructure\\Infrastructure.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Alia\\skinet\\Core\\Core.csproj": {
+    "C:\\Users\\Alia\\skinet\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Alia\\skinet\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\Alia\\skinet\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "c:\\Users\\Alia\\skinet\\Core\\Core.csproj",
+        "projectPath": "C:\\Users\\Alia\\skinet\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\Alia\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Alia\\skinet\\Core\\obj\\",
+        "outputPath": "C:\\Users\\Alia\\skinet\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Alia\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -62,14 +62,14 @@
         }
       }
     },
-    "c:\\Users\\Alia\\skinet\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Users\\Alia\\skinet\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Alia\\skinet\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Alia\\skinet\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "c:\\Users\\Alia\\skinet\\Infrastructure\\Infrastructure.csproj",
+        "projectPath": "C:\\Users\\Alia\\skinet\\Infrastructure\\Infrastructure.csproj",
         "packagesPath": "C:\\Users\\Alia\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Alia\\skinet\\Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\Alia\\skinet\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Alia\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -84,8 +84,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "c:\\Users\\Alia\\skinet\\Core\\Core.csproj": {
-                "projectPath": "c:\\Users\\Alia\\skinet\\Core\\Core.csproj"
+              "C:\\Users\\Alia\\skinet\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\Alia\\skinet\\Core\\Core.csproj"
               }
             }
           }

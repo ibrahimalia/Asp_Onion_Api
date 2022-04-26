@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GlLfJfIjh/xADnCQqaZVAvjXM17tYO4OtRJexQ2QhWT3laTtjEjT7F9W94J9N7YReykj8aj7Nw59D78IfzcFUQ==",
+  "dgSpecHash": "HA8haCHP76c1KsltNMd+NEBIqwu6nkqEKh3uPjxA2pc5O7rfTpbxAW9vHyh8ECYOfpnp1FAiYFmsuCM7ukk2kw==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Alia\\skinet\\API\\API.csproj",
+  "projectFilePath": "C:\\Users\\Alia\\skinet\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Alia\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\Alia\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

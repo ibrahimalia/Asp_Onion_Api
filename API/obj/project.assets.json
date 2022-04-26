@@ -9302,11 +9302,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Alia\\skinet\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\Alia\\skinet\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "c:\\Users\\Alia\\skinet\\API\\API.csproj",
+      "projectPath": "C:\\Users\\Alia\\skinet\\API\\API.csproj",
       "packagesPath": "C:\\Users\\Alia\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Alia\\skinet\\API\\obj\\",
+      "outputPath": "C:\\Users\\Alia\\skinet\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Alia\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -9321,8 +9321,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "c:\\Users\\Alia\\skinet\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "c:\\Users\\Alia\\skinet\\Infrastructure\\Infrastructure.csproj"
+            "C:\\Users\\Alia\\skinet\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Alia\\skinet\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }

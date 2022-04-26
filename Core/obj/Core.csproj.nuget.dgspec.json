@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Alia\\skinet\\Core\\Core.csproj": {}
+    "C:\\Users\\Alia\\skinet\\Core\\Core.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Alia\\skinet\\Core\\Core.csproj": {
+    "C:\\Users\\Alia\\skinet\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Alia\\skinet\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\Alia\\skinet\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "c:\\Users\\Alia\\skinet\\Core\\Core.csproj",
+        "projectPath": "C:\\Users\\Alia\\skinet\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\Alia\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Alia\\skinet\\Core\\obj\\",
+        "outputPath": "C:\\Users\\Alia\\skinet\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Alia\\AppData\\Roaming\\NuGet\\NuGet.Config"

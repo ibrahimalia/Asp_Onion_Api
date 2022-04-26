@@ -58,9 +58,10 @@ namespace API
             //
             services.AddScoped<ITokenService, TokenService>();
             services.AddTransient<IEmailSender, EmailSender>();
+            services.AddScoped<IBacksetRepository,BacksetRepository>();
             services.ConfigureUnitOfWork();
             services.AddAutoMapper(typeof(MapperInitilizer));
-             services.AddSignalR();
+            services.AddSignalR();
             services.AddCors(
                   o =>
                   {
